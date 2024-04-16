@@ -1,5 +1,6 @@
 # pttModelStudies
 
+## Preamble
 In the reposity I wish to compare the effect of several parameters on linear and exponential PTT models.
 
 The parameters varied are:
@@ -19,3 +20,14 @@ I intend to create combined curves featuring
 * Shear stress during start-up
 * Elongational stress during start-up
 * Theoretical (!) molecular weight distribution
+
+## Sidetrack
+
+It would be quite desirable to be able to know
+* the correlation between the Trouton ratio in the deformation-thining and the epsilon parameter
+* whether or not epsilons created between the linear and the exponential models translate into each other
+* 
+
+## Credits
+
+## References

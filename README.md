@@ -14,6 +14,8 @@ I intend to create combined curves featuring
 
 * Shear viscosity as a function of shear rate
 * Elongational viscosity as a function of elongation rate
+* Normal
 * First normal stress difference as a function of shear rate
 * Shear stress during start-up
 * Elongational stress during start-up
+* Theoretical (!) molecular weight distribution

@@ -21,12 +21,17 @@ I intend to create combined curves featuring
 * Elongational stress during start-up
 * Theoretical (!) molecular weight distribution
 
+## Caveats
+* For real simulation, you'll probably want to run a multimode PTTLog model
+* As of right now I really have no idea how well epsilon from the current non-logarithmic model maps to the epsilon used in those models 
+
 ## Sidetrack
 
 It would be quite desirable to be able to know
 * the correlation between the Trouton ratio in the deformation-thining and the epsilon parameter
 * whether or not epsilons created between the linear and the exponential models translate into each other
-* 
+
+## 
 
 ## Credits
 

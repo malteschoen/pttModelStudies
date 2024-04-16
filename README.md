@@ -8,7 +8,7 @@ The parameters varied are:
 * Zero-shear viscosity (either 333 or 3333) (encoded as the second letter)
 * Relaxation time lambda (either 1 or 100) (encoded as the third letter)
 * "Elasticity" parameter epsilon (either 0.25 or 0.01) (encoded as the fourth letter)
-* "Affinity" parameter zeta (TBD) (encoded as the fifth letter)
+* "Affinity" parameter zeta (0 or 0.03) (encoded as the fifth letter)
 
 I intend to create combined curves featuring
 

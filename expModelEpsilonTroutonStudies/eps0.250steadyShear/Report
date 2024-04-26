@@ -1,0 +1,13 @@
+******* Ramp mode: variable ε̇|γ̇ **********
+ε̇|γ̇	extStressXX	extStressXY	extStressXZ	extStressYY	extStressYZ	extStressZZ	Status	Relative_Error
+0.0001	6.659998e-06	0.03330001	0	0	0	0	Exceed_Niter	3.955471e-07
+0.001	0.0006659991	0.332999	0	0	0	0	Exceed_Niter	4.821807e-06
+0.01	0.06659334	3.329834	0	0	0	0	Converged	9.998265e-09
+0.1	6.594382	33.13555	0	0	0	0	Converged	9.880815e-09
+1	377.7174	250.7787	0	0	0	0	Converged	9.671337e-09
+10	2254.83	612.7228	0	0	0	0	Converged	9.368114e-09
+100	4816.41	895.5066	0	0	0	0	Converged	9.673302e-09
+1000	7581.317	1123.517	0	0	0	0	Converged	9.918507e-09
+10000	10435.55	1318.151	0	0	0	0	Converged	9.91703e-09
+100000	13339.11	1490.29	0	0	0	0	Converged	9.583832e-09
+1000000	16273.71	1646.08	0	0	0	0	Converged	9.671911e-09

@@ -22,7 +22,7 @@ parameters
                 etaS             etaS [1 -1 -1 0 0 0 0] 0;
 		etaP             etaP [1 -1 -1 0 0 0 0] 333;                               
                 lambda           lambda [0 0 1 0 0 0 0] 1;
-                epsilon		 epsilon  [0 0 0 0 0 0 0] 0.5;
+                epsilon		 epsilon  [0 0 0 0 0 0 0] 0.1;
 		zeta		 zeta   [0 0 0 0 0 0 0] 0.0;
                 
 		destructionFunctionType	exponential;
@@ -38,9 +38,9 @@ rheoTestFoamParameters
                 ramp 		 true;
 
               // This tensor multiplied by gammaEpsilonDot gives nabla(U)
-                gradU            ( 0.    0.    0.
-                                   1     0     0.
-                                   0.    0.   0); 
+                gradU            ( 0.0    0.    0.
+                                   1.   -0   0.
+                                   0.    0.   -0); 
 
               // Either strain rate or extensional rate (1/s) list (if ramp=false, only the first value in the list is read) 
                 gammaEpsilonDotL 

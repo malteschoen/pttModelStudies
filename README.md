@@ -24,7 +24,32 @@ I intend to create combined curves featuring
 * As of right now I really have no idea how well epsilon from the current non-logarithmic model maps to the epsilon used in those models
 
 ## Terminology & theory
-- ToDo: A brief excursion into Mendelsons simple model of die swell.
+* We assume a fluid being sheared in the plane defined by the '1' and '2' axes, of which the '1' axis is the flow direction/direction of the moving plate.
+* This shear flow stores energy in the melt, the elastic recovery of which then causes the extrudate to swell.
+* The first normal stress difference $N_{1}$ is defined as:
+```math
+N_{1} = \tau_{11}-\tau_{22}
+```
+
+* Mendelson et al. [2] posit that (Eq.18):
+```math
+N_{1} = \tau_{11}-\tau_{22} =\frac{2}{3}\tau_{12} \sqrt{B^4-\frac{1}{B^{2}}}
+```
+* In most cases $\tau_{22}$ is small and can be neglected.
+* For die swell factors B larger than 2 we can also neglect the contribution of $`\frac{1}{B^{2}}`$.
+* Thus, we can conclude that the die swell factor B is given by:
+```math
+ B = \sqrt{\frac{2}{3}\frac{\tau_{11}}{\tau_{12}}}
+```
+* Obviously, this simplistic model make some major assumptions:
+  * Whatever energy might have been imparted through elongational flow occuring at the entry into the capillary has relaxed/dissipated. 
+  * The capillary and the extrudate are cylindrical.
+  * The extrudate can swell until all energy has been converted.
+    
+*The model is hence best applicable to cases in which:
+  * Residence time in the capillary is long relative to the relaxation time (e.g. a L/D ratio of 30 or higher)
+  * The capillary is cylindrical, swell is evaluated at the point of maximum strand diameter.
+  * The extrudate is not cooled (which would cause energy to be 'frozen in' as internal stresses) / the extrudate has been stress-relieved and shrunk through tempering (e.g. in a bath of silicone oil).
 
 
 ## Linear or exponential model?
@@ -83,6 +108,11 @@ It would be quite desirable to be able to know
 * the correlation between the Trouton ratio in the deformation-thining and the epsilon parameter
 * whether or not epsilons created between the linear and the exponential models translate into each other
 
-## Constitutive equations
+## Constitutive equation of the exponential PTT model
+
+## More involved derivation of [2]
+
 
 ## References
+[2]  Mendelson, R. A. ; Finger, F. L. ; Bagley, E. B.: Die swell and recoverable shear strain in polyethylene extrusion.  Journal of Polymer Science Part C: Polymer Symposia 35 (1971) 1, p. 177–188 - DOI: 10.1002/polc.5070350114
+

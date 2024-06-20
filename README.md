@@ -39,14 +39,14 @@ N_{1} = \tau_{11}-\tau_{22} =\frac{2}{3}\tau_{12} \sqrt{B^4-\frac{1}{B^{2}}}
 * For die swell factors B larger than 2 we can also neglect the contribution of $`\frac{1}{B^{2}}`$.
 * Thus, we can conclude that the die swell factor B is given by:
 ```math
- B = \sqrt{\frac{2}{3}\frac{\tau_{11}}{\tau_{12}}}
+ B = \sqrt{\frac{3}{2}\frac{\tau_{11}}{\tau_{12}}}
 ```
 * Obviously, this simplistic model make some major assumptions:
   * Whatever energy might have been imparted through elongational flow occuring at the entry into the capillary has relaxed/dissipated. 
   * The capillary and the extrudate are cylindrical.
   * The extrudate can swell until all energy has been converted.
     
-*The model is hence best applicable to cases in which:
+* The model is hence best applicable to cases in which:
   * Residence time in the capillary is long relative to the relaxation time (e.g. a L/D ratio of 30 or higher)
   * The capillary is cylindrical, swell is evaluated at the point of maximum strand diameter.
   * The extrudate is not cooled (which would cause energy to be 'frozen in' as internal stresses) / the extrudate has been stress-relieved and shrunk through tempering (e.g. in a bath of silicone oil).

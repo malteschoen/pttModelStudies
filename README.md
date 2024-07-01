@@ -3,7 +3,7 @@ In the reposity I wish to compare the effect of several parameters on linear and
 
 The parameters varied are:
 
-* Type of model (linear or exponential or Giesekus) (encoded as the first letter - either 0,1 or 2)
+* Type of model (linear or exponential or Giesekus or generalised Mittag-Leffer) (encoded as the first letter - either 0,1,2,3)
 * Zero-shear viscosity etaZero (either 333 or 3333) (encoded as the second letter)
 * Relaxation time lambda (either 1 or 0.01) (encoded as the third letter)
 * "Elasticity" parameter epsilon (either 0.25 or 0.01 for the PTT models and either 0.01 or 0.5 for the Giesekus models) (encoded as the fourth letter)

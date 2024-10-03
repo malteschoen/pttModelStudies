@@ -3,7 +3,8 @@
 * Chapter 2: Linear, exponential or generalised Mittag-Leffler model?
 * Chapter 3: Effect of zero-shear viscosity in the exponential model
 * Chapter 4: Effect of relaxation time lambda in the exponential model
-* Chapter 5: Effect of affinity parameter zeta in the exponential model
+* Chapter 5: Effect of elasticity parameter epsilon in the exponential model
+* Chapter 6: Effect of affinity parameter zeta in the exponential model
 * Various appendices
 * References
 
@@ -106,20 +107,20 @@ The picture above shows that the relaxation time lambda shift the curves 'left t
 The picture above shows that the relaxation time lambda shift the curves 'left to right'.
 </details>
 
-##  Chapter 4: Effect of elasticity parameter epsilon in the exponential model
+##  Chapter 5: Effect of elasticity parameter epsilon in the exponential model
 <details>
 <summary> [CLICK TO EXPAND AND VIEW] </summary>
  
 ![epsiViscosity](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/002a_effect_of_epsilon.png)
 
-The picture above shows that with lower value of the elasticity parameter epsilon, steady-state uniaxial elongational viscosity exceeds steady-state shear viscosity by a larger factor (higher Trouton ratio). Also, a careful viewer will have observed that smaller value of epsilon shifts curves towards higher shear rates. See appendix 1 for more details on this.
+The picture above shows that with lower value of the elasticity parameter epsilon, steady-state uniaxial elongational viscosity exceeds steady-state shear viscosity by a larger factor (higher Trouton ratio). Also, a careful viewer will have observed that smaller value of epsilon appears to shift the curves towards higher deformation rates. See appendix 1 for more details on this.
 
 ![epsiSwell](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/002b_effect_of_epsilon.png)
 
 The picture above shows that epsilon also has an outsized effect on die swell.
 </details>
 
-##  Chapter 5: Effect of affinity parameter zeta in the exponential model
+##  Chapter 6: Effect of affinity parameter zeta in the exponential model
 <details>
 <summary> [CLICK TO EXPAND AND VIEW] </summary>
  
@@ -135,7 +136,30 @@ The picture above shows that with higher value of the affinity parameter zeta, d
 ## Appendix 1: The interaction between $\epsilon$ and $\lambda$ 
 <details>
 <summary> [CLICK TO EXPAND AND VIEW] </summary>
+
+Traditionally, the inverse of the relaxation time lambda has been interpreted as 'a critical deformation rate at which interesting things happen'. These interesting things are:
+- For a plot of steady-state shear viscosity over shear rate, the inverse of the relaxation time lambda (or B, if a Carreau-style model is employed) sits right between the (first) Newtonian plateau region and the shear-thinning region. If extrapolations from both regions are made (which are straight lines in the log-log plot yet follow power-law equations), the intersection point is at the inverse of lambda.
+- For a plot of steady-state elongational viscosity over elongation rate, the inverse of the relaxation time lambda signifies the global maximum of the elongational viscosity.
+
+Chapter 3 neatly illustrates this effect.
+
+If you now observe the results of chapter 4 instead, you will note that smaller value of epsilon appears to shift the curve towards higher deformation rates. In effect, the critical deformation rate is shifted. 
+This effect can be expressed (and corrected for) using the following formula:
+
+$ \dot{\gamma}_{interesting} = \dot{\epsilon}_{interesting} = \frac{1}{\lambda\sqrt{\epsilon}}$
+
+I recall at least one paper also applying this correction in discussing a curve of viscosity over deformation rate, yet cannot seem to recover that paper. It will be added in due time.
+
+For the moment, I refer to [3](https://doi.org/10.1017/S002211209900453X), who use a dimensionless group of
+$De \sqrt{\epsilon} = \lambda \frac{U}{H} \sqrt{\epsilon} = \lambda \dot{\gamma}\sqrt{\epsilon}$
+
+which can be recast to this:
+
+$\gamma_{interesting} = \frac{1}{\lambda\sqrt{\epsilon}}$
+
+For a scientist interested in intuiting and comparing the PTT model or an engineer tasked with relating model parameters to existing data, I leave the note that you should consider the 'real relaxation time' of a PTT fluid to be $lambda\sqrt{\epsilon}$. This 'real relaxation time' can be meaningfully compared to relaxation times found in measurements and other data.
 </details>
+
 
 ## Appendix 2: ToDos
 <details>
@@ -156,5 +180,8 @@ The picture above shows that with higher value of the affinity parameter zeta, d
 ## References
 <details>
 <summary> [CLICK TO EXPAND AND VIEW] </summary>
+[1]  where did it go?
 [2]  Mendelson, R. A. ; Finger, F. L. ; Bagley, E. B.: Die swell and recoverable shear strain in polyethylene extrusion.  Journal of Polymer Science Part C: Polymer Symposia 35 (1971) 1, p. 177–188 - DOI: 10.1002/polc.5070350114
+[3]  Oliveira, Paulo J. ; Pinho, Fernando T.: Analytical solution for fully developed channel and pipe flow of Phan-Thien–Tanner fluids. In: Journal of Fluid Mechanics Bd. 387 (1999), S. 271–280 - DOI: 10.1017/S002211209900453X
+
 </details>

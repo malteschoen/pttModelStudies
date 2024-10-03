@@ -10,8 +10,11 @@
 * References
 
 ## Chapter 1: Mission statement
+
+In this reposity I wish to compare the effect of several parameters of different PTT models on melt properties relevant to engineering work.
+
 <details>
-<summary>[CLICK TO EXPAND] In the reposity I wish to compare the effect of several parameters on linear and exponential PTT models</summary>
+<summary>[CLICK TO EXPAND AND VIEW] </summary>
 
  
 ### Parameters varied are:
@@ -26,8 +29,7 @@ I intend to create combined curves featuring
 
 * Shear viscosity as a function of shear rate
 * Elongational viscosity as a function of elongation rate
-* Normal
-* First normal stress difference as a function of shear rate
+* First normal stress (difference) as a function of shear rate
 * Shear stress during start-up
 * Elongational stress during start-up
 * Theoretical (!) molecular weight distribution
@@ -80,6 +82,27 @@ The picture above shows that the linear PTT model has a major drawback: the stea
 
 The picture above is even more damning: the linear PTT model predicts progressively growing die swell (blue dotted line) past the Newtonian plateau. Reality has so far completely refused to adhere to this model. 
 
+**So, is the exponential PTT model suitable in any case?**
+* Well, it is, with one exception that might or might not affect your use case. I am talking about the fact that in both linear and exponential PTT model the slope of the viscosity in the decades beyond the transitional region is 'hard-coded' (to a value of 45 degrees in the log-log-plot).
+* In more mathematical terms: The Carreau parameter C is locked at at 1, the power-law coefficient is fixed at n = 0.5
+* For reference, the melts of most commercial polymers have power-law coefficents above 0.5 in their 'terminal shear-thinning region'. Some other materials (including rubbers) exhibit 'terminal power-law coefficients' as low as 0.2.
+* The generalised Mittag-Leffler PTT model affords us the option of varying the 'terminal viscosity slope'. Its parameters are described in more detail in chapter 8 to 12.
+* Still, real engineering data on shear viscosity very rarely covers multiple decades in the shear-thinning region since an engineer is unlikely to encounter an application in which multiple decades of shear rate are present AND relevant at the same time.
+* Hence it is often possible to achieve a good curve fit by changing the relaxation time lambda.
+* This then leads to 'unphysical' values of lambda. As lambda mostly impacts transient behaviour, many steady-state extrusion processes can still be modelled well.
+* However, if accurate understanding of transient behaviours (and the underlying molecular stress/relaxation state) is crucial, this kind of manipulation should be avoided.
+* In conclusion, some indications and contraindications for usage of Mittag-Leffler PTT model in place of an exponential PTT model can be given.
+  * Indications
+     * tba
+     * tba
+  * Contraindications
+     * tba
+     * tba
+       
+Finally, contraindications against the use of **any** PTT model are
+  * Presence of a second Newtonian plateau (e.g. very highly filled materials, polymer solutions)
+  * to be added
+
 </details>
 
 ## Chapter 3: Effect of zero-shear viscosity in the exponential model
@@ -114,7 +137,7 @@ The picture above shows that the relaxation time lambda shift the curves 'left t
  
 ![epsiViscosity](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/002a_effect_of_epsilon.png)
 
-The picture above shows that with lower value of the elasticity parameter epsilon, steady-state uniaxial elongational viscosity exceeds steady-state shear viscosity by a larger factor (higher Trouton ratio). Also, a careful viewer will have observed that smaller value of epsilon appears to shift the curves towards higher deformation rates. See appendix 1 for more details on this.
+The picture above shows that with lower value of the elasticity parameter epsilon, steady-state uniaxial elongational viscosity exceeds steady-state shear viscosity by a larger factor (higher Trouton ratio). Also, a careful viewer will have observed that smaller value of epsilon appears to shift the curves towards higher deformation rates. See Appendix 1 for more details on this.
 
 ![epsiSwell](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/002b_effect_of_epsilon.png)
 
@@ -141,10 +164,8 @@ The picture above shows that with higher value of the affinity parameter zeta, d
 * We can provide two simple  of thumb for a initial guess of epsilon based on the interrelation of epsilon and the uniaxial Trouton ratio Tr.
 * Tr is defined as the ratio of uniaxial elongational viscosity and shear viscosity at a certain deformation rate - in the Newtonian plateau Tr is 3, meaning that differences become only visible with higher deformation rates.
  * We've generated the dataset for deformation rates of 100/s which should lie in the shear-thinning domain of most materials, while at the same time being accessible to both rotational and capillary rheometers.
-* Please note that an elongation rate of 100/s requires higher shear rates in capillary rheometers -(around 450 1/s for the standard 15 mm barrel feeding a 1 mm capillary).
-* Refer to [our work](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries) on the (simplified) Gibson method for more details.
-* Users of rotational rheometers should endeavour to either measure or approximate the normal stresses.
-* See [our work](https://github.com/malteschoen/rheologyHacks) on rheological formulae for more details.
+* Please note that an elongation rate of 100/s requires higher shear rates in capillary rheometers -(around 450 1/s for the standard HPCR with a 15 mm barrel feeding a 1 mm capillary).Refer to [my work](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries) on the (simplified) Gibson method for more details.
+* Users of rotational rheometers should endeavour to either measure or approximate the normal stresses. See [my work](https://github.com/malteschoen/rheologyHacks) on rheological formulae for more details.
   
 ![epsilonFromTrouton](https://github.com/malteschoen/pttModelStudies/blob/main/expModelEpsilonTroutonStudies/epsilonFromTroutonRatio.png)
 

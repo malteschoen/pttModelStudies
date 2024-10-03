@@ -138,15 +138,18 @@ The picture above shows that with higher value of the affinity parameter zeta, d
 <summary> [CLICK TO EXPAND AND VIEW] </summary>
 
 Traditionally, the inverse of the relaxation time lambda has been interpreted as 'a critical deformation rate at which interesting things happen'. These interesting things are:
-- For a plot of steady-state shear viscosity over shear rate, the inverse of the relaxation time lambda (or B, if a Carreau-style model is employed) sits right between the (first) Newtonian plateau region and the shear-thinning region. If extrapolations from both regions are made (which are straight lines in the log-log plot yet follow power-law equations), the intersection point is at the inverse of lambda.
-- For a plot of steady-state elongational viscosity over elongation rate, the inverse of the relaxation time lambda signifies the global maximum of the elongational viscosity.
+- For a plot of steady-state shear viscosity over shear rate, the inverse of the relaxation time lambda (or B, if a Carreau-style model is employed) is the critial shear rate $\dot{\gamma}_{crit}$ that delineates the (first) Newtonian plateau region and the shear-thinning region. If extrapolations from both regions are made (which are straight lines in the log-log plot yet follow power-law equations), the intersection point is found at the critical shear rate, which is 1/lambda.
+- For a plot of steady-state elongational viscosity over elongation rate, the global maximum of the elongational viscosity is found for a critical elongation rate $\dot{\epsilon}_{crit}$ of 1/lambda.
 
-Chapter 3 neatly illustrates this effect.
+Chapter 4 neatly illustrates this effect.
 
-If you now observe the results of chapter 4 instead, you will note that smaller value of epsilon appears to shift the curve towards higher deformation rates. In effect, the critical deformation rate is shifted. 
-This effect can be expressed (and corrected for) using the following formula:
+If you now observe the results of chapter 5 instead, you will note that smaller value of epsilon appears to shift the curve towards higher deformation rates. In effect, the critical deformation rate is shifted. 
+This effect can be expressed (and corrected for) using the following formulae:
 
-$ \dot{\gamma}_{interesting} = \dot{\epsilon}_{interesting} = \frac{1}{\lambda\sqrt{\epsilon}}$
+$\dot{\gamma}_{crit} = \frac{1}{\lambda\sqrt{\epsilon}}$
+
+$\dot{\epsilon}_{crit} = \frac{1}{\lambda\sqrt{\epsilon}}$
+
 
 I recall at least one paper also applying this correction in discussing a curve of viscosity over deformation rate, yet cannot seem to recover that paper. It will be added in due time.
 
@@ -155,9 +158,9 @@ $De \sqrt{\epsilon} = \lambda \frac{U}{H} \sqrt{\epsilon} = \lambda \dot{\gamma}
 
 which can be recast to this:
 
-$\gamma_{interesting} = \frac{1}{\lambda\sqrt{\epsilon}}$
+$\dot{\gamma}_{crit} = \frac{1}{\lambda\sqrt{\epsilon}}$
 
-For a scientist interested in intuiting and comparing the PTT model or an engineer tasked with relating model parameters to existing data, I leave the note that you should consider the 'real relaxation time' of a PTT fluid to be $lambda\sqrt{\epsilon}$. This 'real relaxation time' can be meaningfully compared to relaxation times found in measurements and other data.
+For a scientist interested in intuiting and comparing the PTT model or an engineer tasked with relating model parameters to existing data, I leave the note that you should consider the 'real relaxation time' of a PTT fluid to be $\lambda\sqrt{\epsilon}$. This 'real relaxation time' can be meaningfully compared to relaxation times found in measurements data and other models.
 </details>
 
 
@@ -169,7 +172,7 @@ For a scientist interested in intuiting and comparing the PTT model or an engine
     * the correlation between the Trouton ratio in the deformation-thining and the epsilon parameter
     * whether or not epsilons created between the linear and the exponential models translate into each other
 
-* Write out and explain the constitutive equation of the exponential PTT model
+* Write out the full constitutive equation of the exponential PTT model, simplify to an explainable level
  
 </details>
 

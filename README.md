@@ -5,6 +5,7 @@
 * Chapter 4: Effect of relaxation time lambda in the exponential model
 * Chapter 5: Effect of elasticity parameter epsilon in the exponential model
 * Chapter 6: Effect of affinity parameter zeta in the exponential model
+* Chapter 7: Heuristics for an initial guess of epsilon in the exponential model
 * Various appendices
 * References
 
@@ -131,6 +132,21 @@ The picture above shows that with higher value of the affinity parameter zeta, t
 ![zetaSwell](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/005b_effect_of_zeta.png)
 
 The picture above shows that with higher value of the affinity parameter zeta, die swell turns really really weird.
+</details>
+
+## Chapter 7:  Heuristics for an initial guess of epsilon in the exponential model
+<details>
+<summary> [CLICK TO EXPAND AND VIEW] </summary>
+We can provide two simple  of thumb for a initial guess of epsilon based on the interrelation of epsilon and the uniaxial Trouton ratio (that is, the ratio of uniaxial elongational and shear viscosity at a certain deformation rate. We've generated the dataset for shear / elongation rates of 100/s which should lie in the shear-thinning domain of most materials, while at the same time being accessible to both rotational and capillary rheometers. Please note that an elongation rate of 100/s requires higher shear rates (around 450 1/s) in capillary rheometers. Refer to [our work](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries) on the (simplified) Gibson method for more details.
+
+![epsilonFromTrouton](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/005a_effect_of_zeta.png)
+
+The first heuristic follows a power law, while the second heuristic is a very simple (yet surprisingly accurate) rule of thumb.
+
+![epsilonFromPSI1](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/005b_effect_of_zeta.png)
+
+Similarly, a power law can be constructed for PSI1, the first normal stress coefficient. See [our work](https://github.com/malteschoen/rheologyHacks) on rheological formulae for more details.
+
 </details>
 
 ## Appendix 1: The interaction between $\epsilon$ and $\lambda$ 

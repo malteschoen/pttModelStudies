@@ -137,15 +137,22 @@ The picture above shows that with higher value of the affinity parameter zeta, d
 ## Chapter 7:  Heuristics for an initial guess of epsilon in the exponential model
 <details>
 <summary> [CLICK TO EXPAND AND VIEW] </summary>
-We can provide two simple  of thumb for a initial guess of epsilon based on the interrelation of epsilon and the uniaxial Trouton ratio (that is, the ratio of uniaxial elongational and shear viscosity at a certain deformation rate. We've generated the dataset for shear / elongation rates of 100/s which should lie in the shear-thinning domain of most materials, while at the same time being accessible to both rotational and capillary rheometers. Please note that an elongation rate of 100/s requires higher shear rates (around 450 1/s) in capillary rheometers. Refer to [our work](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries) on the (simplified) Gibson method for more details.
+ 
+* We can provide two simple  of thumb for a initial guess of epsilon based on the interrelation of epsilon and the uniaxial Trouton ratio Tr.
+* Tr is defined as the ratio of uniaxial elongational viscosity and shear viscosity at a certain deformation rate - in the Newtonian plateau Tr is 3, meaning that differences become only visible with higher deformation rates.
+ * We've generated the dataset for deformation rates of 100/s which should lie in the shear-thinning domain of most materials, while at the same time being accessible to both rotational and capillary rheometers.
+* Please note that an elongation rate of 100/s requires higher shear rates in capillary rheometers -(around 450 1/s for the standard 15 mm barrel feeding a 1 mm capillary).
+* Refer to [our work](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries) on the (simplified) Gibson method for more details.
+* Users of rotational rheometers should endeavour to either measure or approximate the normal stresses.
+* See [our work](https://github.com/malteschoen/rheologyHacks) on rheological formulae for more details.
+  
+![epsilonFromTrouton](https://github.com/malteschoen/pttModelStudies/blob/main/expModelEpsilonTroutonStudies/epsilonFromTroutonRatio.png)
 
-![epsilonFromTrouton](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/005a_effect_of_zeta.png)
+The first heuristic follows a power law of $\epsilon = 11 (Tr^{\frac{20}{11}})$ , while the second heuristic is a very simple (yet surprisingly useful) rule of thumb of $\epsilon = \frac{1}{Tr}$
 
-The first heuristic follows a power law, while the second heuristic is a very simple (yet surprisingly accurate) rule of thumb.
+![epsilonFromPSI1](https://github.com/malteschoen/pttModelStudies/blob/main/expModelEpsilonTroutonStudies/epsilonFromPSI1.png)
 
-![epsilonFromPSI1](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/005b_effect_of_zeta.png)
-
-Similarly, a power law can be constructed for PSI1, the first normal stress coefficient. See [our work](https://github.com/malteschoen/rheologyHacks) on rheological formulae for more details.
+Similarly, a power law can be constructed for PSI1, the first normal stress coefficient. 
 
 </details>
 

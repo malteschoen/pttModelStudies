@@ -1,6 +1,14 @@
-## Mission statement
-In the reposity I wish to compare the effect of several parameters on linear and exponential PTT models.
+## Chapter 0: Table of contents: 
+* Chapter 1
+* Chapter 2
+* Chapter 3
+* Chapter 4
 
+## Chapter 1: Mission statement
+<details>
+<summary>In the reposity I wish to compare the effect of several parameters on linear and exponential PTT models</summary>
+
+```
 The parameters varied are:
 
 * Type of model (linear or exponential or Giesekus or generalised Mittag-Leffer) (encoded as the first letter - either 0,1,2,3)
@@ -49,10 +57,10 @@ N_{1} = \tau_{11}-\tau_{22} =\frac{2}{3}\tau_{12} \sqrt{B^4-\frac{1}{B^{2}}}
 * The model is hence best applicable to cases in which:
   * Residence time in the capillary is long relative to the relaxation time (e.g. a L/D ratio of 30 or higher)
   * The capillary is cylindrical, swell is evaluated at the point of maximum strand diameter.
-  * The extrudate is not cooled (which would cause energy to be 'frozen in' as internal stresses) / the extrudate has been stress-relieved and shrunk through tempering (e.g. in a bath of silicone oil).
+  * The extrudate is not cooled (which would cause energy to be 'frozen in' as internal stresses) / the extrudate has been stress-relieved and expanded to final shape through tempering (e.g. in a bath of silicone oil).
+```
 
-
-## Linear or exponential model?
+## Chapter 2: Linear or exponential model?
 ![linPttVersusExpPTT_elongational](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/001a_linPTT_versus_expPTT.png)
 
 The picture above shows that the linear PTT model has a major drawback: the steady-state uniaxial elongational viscosity (blue solid line) remains constant for elongational rates past the Newtonian plateau. This is difficult to reconcile with other works on steady-state uniaxial elongational viscosity.
@@ -61,7 +69,7 @@ The picture above shows that the linear PTT model has a major drawback: the stea
 
 The picture above is even more damning: the linear PTT model predicts progressively growing die swell (blue dotted line) past the Newtonian plateau. Reality has so far completely refused to adhere to this model. 
 
-## Effect of zero-shear viscosity in the exponential model
+## Chapter 3: Effect of zero-shear viscosity in the exponential model
 
 ![etaZeroViscosity](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/004a_effect_of_etaZero.png)
 
@@ -71,7 +79,7 @@ The picture above shows that the zero-shear viscosity shifts the curves 'up and 
 
 The picture above shows that the zero-shear viscosity has no effect on die swell.
 
-## Effect of relaxation time lambda in the exponential model
+## Chapter 4:  Effect of relaxation time lambda in the exponential model
 
 ![lambdaViscosity](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/003a_effect_of_lambda.png)
 
@@ -81,17 +89,17 @@ The picture above shows that the relaxation time lambda shift the curves 'left t
 
 The picture above shows that the relaxation time lambda shift the curves 'left to right'.
 
-## Effect of elasticity parameter epsilon in the exponential model
+##  Chapter 4: Effect of elasticity parameter epsilon in the exponential model
 
 ![epsiViscosity](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/002a_effect_of_epsilon.png)
 
-The picture above shows that with lower value of the elasticity parameter epsilon, steady-state uniaxial elongational viscosity exceeds steady-state shear viscosity by a larger factor (higher Trouton ratio).
+The picture above shows that with lower value of the elasticity parameter epsilon, steady-state uniaxial elongational viscosity exceeds steady-state shear viscosity by a larger factor (higher Trouton ratio). Also, a careful viewer will have observed that smaller value of epsilon shifts curves towards higher shear rates. See appendix 1 for more details on this.
 
 ![epsiSwell](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/002b_effect_of_epsilon.png)
 
 The picture above shows that epsilon also has an outsized effect on die swell.
 
-## Effect of affinity parameter zeta in the exponential model
+##  Chapter 5: Effect of affinity parameter zeta in the exponential model
 
 ![zetaViscosity](https://github.com/malteschoen/pttModelStudies/blob/main/newPictures/005a_effect_of_zeta.png)
 
@@ -101,16 +109,17 @@ The picture above shows that with higher value of the affinity parameter zeta, t
 
 The picture above shows that with higher value of the affinity parameter zeta, die swell turns really really weird.
 
+## Appendix 1: The interaction between $/epsilon$ and $/lambda$ 
 
-## ToDos
+## Appendix 2: ToDos
 
-It would be quite desirable to be able to know
-* the correlation between the Trouton ratio in the deformation-thining and the epsilon parameter
-* whether or not epsilons created between the linear and the exponential models translate into each other
+* It would be quite desirable to be able to know
+    * the correlation between the Trouton ratio in the deformation-thining and the epsilon parameter
+    * whether or not epsilons created between the linear and the exponential models translate into each other
 
-## Constitutive equation of the exponential PTT model
+* Constitutive equation of the exponential PTT model
 
-## More involved derivation of [2]
+
 
 
 ## References

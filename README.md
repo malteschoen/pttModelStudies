@@ -202,7 +202,9 @@ For a scientist interested in intuiting and comparing the PTT model or an engine
 <details>
 <summary> [CLICK TO EXPAND AND VIEW] </summary>
 [1]  where did it go?
+ 
 [2]  Mendelson, R. A. ; Finger, F. L. ; Bagley, E. B.: Die swell and recoverable shear strain in polyethylene extrusion.  Journal of Polymer Science Part C: Polymer Symposia 35 (1971) 1, p. 177–188 - DOI: 10.1002/polc.5070350114
+
 [3]  Oliveira, Paulo J. ; Pinho, Fernando T.: Analytical solution for fully developed channel and pipe flow of Phan-Thien–Tanner fluids. In: Journal of Fluid Mechanics Bd. 387 (1999), S. 271–280 - DOI: 10.1017/S002211209900453X
 
 </details>

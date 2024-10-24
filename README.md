@@ -38,34 +38,8 @@ I intend to create combined curves featuring
 * For real simulation, you'll probably want to run a multimode PTTLog model
 * As of right now I really have no idea how well epsilon from the current non-logarithmic model maps to the epsilon used in those models
 
-### Terminology & theory
-* We assume a fluid being sheared in the plane defined by the '1' and '2' axes, of which the '1' axis is the flow direction/direction of the moving plate.
-* This shear flow stores energy in the melt, the elastic recovery of which then causes the extrudate to swell.
-* The first normal stress difference $N_{1}$ is defined as:
-
-$N_{1} = \tau_{11}-\tau_{22}$
-
-
-* Mendelson et al. [2] posit that (Eq.18):
-
-$N_{1} = \tau_{11}-\tau_{22} =\frac{2}{3}\tau_{12} \sqrt{B^4-\frac{1}{B^{2}}}$
-
-* In most cases $\tau_{22}$ is small and can be neglected.
-* For die swell factors B larger than 2 we can also neglect the contribution of $`\frac{1}{B^{2}}`$.
-* Thus, we can conclude that the die swell factor B is given by:
-
-$B = \sqrt{\frac{3}{2}\frac{\tau_{11}}{\tau_{12}}}$
-
-* Obviously, this simplistic model make some major assumptions:
-  * Whatever energy might have been imparted through elongational flow occuring at the entry into the capillary has relaxed/dissipated. 
-  * The capillary and the extrudate are cylindrical.
-  * The extrudate can swell until all energy has been converted.
-    
-* The model is hence best applicable to cases in which:
-  * Residence time in the capillary is long relative to the relaxation time (e.g. a L/D ratio of 30 or higher)
-  * The capillary is cylindrical, swell is evaluated at the point of maximum strand diameter.
-  * The extrudate is not cooled (which would cause energy to be 'frozen in' as internal stresses) / the extrudate has been stress-relieved and expanded to final shape through tempering (e.g. in a bath of silicone oil).
-    
+### Approximation of die swell
+See [this link](https://github.com/malteschoen/rheologyHacks#chapter-4-a-simple-formula-for-shear-induced-die-swell) for the formula used to approximate die swell.
 </details>
 
 ## Chapter 2: Linear, exponential or generalised Mittag-Leffler model?
@@ -252,7 +226,9 @@ For a scientist interested in intuiting and comparing the PTT model or an engine
 <details>
 <summary> [CLICK TO EXPAND AND VIEW] </summary>
 [1]  where did it go?
+ 
 [2]  Mendelson, R. A. ; Finger, F. L. ; Bagley, E. B.: Die swell and recoverable shear strain in polyethylene extrusion.  Journal of Polymer Science Part C: Polymer Symposia 35 (1971) 1, p. 177–188 - DOI: 10.1002/polc.5070350114
+
 [3]  Oliveira, Paulo J. ; Pinho, Fernando T.: Analytical solution for fully developed channel and pipe flow of Phan-Thien–Tanner fluids. In: Journal of Fluid Mechanics Bd. 387 (1999), S. 271–280 - DOI: 10.1017/S002211209900453X
 
 </details>

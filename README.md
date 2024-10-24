@@ -6,6 +6,10 @@
 * Chapter 5: Effect of elasticity parameter epsilon in the exponential model
 * Chapter 6: Effect of affinity parameter zeta in the exponential model
 * Chapter 7: Heuristics for an initial guess of epsilon in the exponential model
+* Chapter 8 (WIP):  Comparison between the exponential and the log-exponential model
+* Chapter 9 (WIP):  Heuristics for an initial guess of epsilon in the log-exponential model
+* Chapter 10 (WIP):  Comparison between parameters in the linear-analytical, exponential and log-exponential model - or: is EXCEL all you need?
+
 * Various appendices
 * References
 
@@ -151,7 +155,7 @@ Similarly, a power law can be constructed for PSI1, the first normal stress coef
 
 </details>
 
-## Chapter 8:  Comparison between the exponential and the log-exponential model
+## Chapter 8 (WIP):  Comparison between the exponential and the log-exponential model
 <details>
 <summary> [CLICK TO EXPAND AND VIEW] </summary>
  
@@ -159,7 +163,7 @@ TBA
 
 </details>
 
-## Chapter 9:  Heuristics for an initial guess of epsilon in the log-exponential model
+## Chapter 9 (WIP):  Heuristics for an initial guess of epsilon in the log-exponential model
 <details>
 <summary> [CLICK TO EXPAND AND VIEW] </summary>
  
@@ -167,7 +171,7 @@ TBA
 
 </details>
 
-## Chapter 9:  Comparison between parameters in the linear-analytical, exponential and log-exponential model - or: is EXCEL all you need?
+## Chapter 10 (WIP):  Comparison between parameters in the linear-analytical, exponential and log-exponential model - or: is EXCEL all you need?
 <details>
 <summary> [CLICK TO EXPAND AND VIEW] </summary>
  
